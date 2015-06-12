@@ -10,26 +10,29 @@
 <body>
     <div class="container"></div>
     <div class="clock_cont">
-    <div class="button"><p>C</p></div>
-    <div class="button" id="big"><p></p></div>
-    <div class="button"><p>7</p></div>
-    <div class="button"><p>8</p></div>
-    <div class="button"><p>9</p></div>
-    <div class="button"><p>/</p></div>
-    <div class="button"><p>4</p></div>
-    <div class="button"><p>5</p></div>
-    <div class="button"><p>6</p></div>
-    <div class="button"><p>x</p></div>
-    <div class="button"><p>1</p></div>
-    <div class="button"><p>2</p></div>
-    <div class="button"><p>3</p></div>
-    <div class="button"><p>-</p></div>
-    <div class="button"><p>0</p></div>
-    <div class="button"><p id="ocd">.</p></div>
-    <div class="button"><p>=</p></div>
-    <div class="button"><p>+</p></div>
+<form name="Calc">
+    <input class="button" type="button" value=" C " onclick="document.Calc.Numbers.value = ' ' "/>
+    <input class="button" id="big" type="text" name="Numbers">
+    <input class="button" type="button" value=" 7 " onclick="document.Calc.Numbers.value += '7' "/>
+    <input class="button" type="button" value=" 8 " onclick="document.Calc.Numbers.value += '8' "/>
+    <input class="button" type="button" value=" 9 " onclick="document.Calc.Numbers.value += '9' "/>
+    <input class="button" type="button" value=" / " onclick="document.Calc.Numbers.value += ' / ' "/>
+    <input class="button" type="button" value=" 4 " onclick="document.Calc.Numbers.value += '4' "/>
+    <input class="button" type="button" value=" 5 " onclick="document.Calc.Numbers.value += '5' "/>
+    <input class="button" type="button" value=" 6 " onclick="document.Calc.Numbers.value += '6' "/>
+    <input class="button" type="button" value=" x " onclick="document.Calc.Numbers.value += ' * ' "/>
+    <input class="button" type="button" value=" 1 " onclick="document.Calc.Numbers.value += '1' "/>
+    <input class="button" type="button" value=" 2 " onclick="document.Calc.Numbers.value += '2' "/>
+    <input class="button" type="button" value=" 3 " onclick="document.Calc.Numbers.value += '3' "/>
+    <input class="button" type="button" value=" - " onclick="document.Calc.Numbers.value += ' - ' "/>
+    <input class="button" type="button" value=" 0 " onclick="document.Calc.Numbers.value += '0' "/>
+    <input class="button" type="button" value=" . " onclick="document.Calc.Numbers.value += ' . ' "/>
+    <input class="button" type="button" value=" = " onclick="document.Calc.Numbers.value = eval(Calc.Numbers.value)"/>
+    <input class="button" type="button" value=" + " onclick="document.Calc.Numbers.value += ' + ' "/>
+</form>
     </div>
     <script type="text/javascript" src="./dist/app-browserify.js"></script>
+
 </body>
 
 </html>

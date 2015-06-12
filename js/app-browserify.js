@@ -23,4 +23,3 @@ var Promise = require('es6-promise').Promise
     // start app
     // new Router()
 // }
-

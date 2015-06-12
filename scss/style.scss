@@ -91,7 +91,6 @@ img {
  */
 
 .clock_cont {
-    background-color: #64B255;
     width: 340px;
     height: 425px;
     margin: auto;
@@ -106,7 +105,6 @@ img {
         color: white;
         text-align: center;
         margin: 20px;
-        font-family: Arial;
         font-size: 28px;
     }
 }
@@ -131,4 +129,12 @@ img {
 
 #ocd {
     margin:12px;
+}
+
+input{
+    background-color: #64B255;
+    border: 0px solid;
+    font-family: Arial;
+    font-size: 24px;
+    color: white;
 }
